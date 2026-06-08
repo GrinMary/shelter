@@ -19,8 +19,9 @@ header {
     position:absolute;
     max-width: 1280px;
     width: 100%;
-    height: 60px;
-    top: 30px;
+    height: 120px;
+    z-index: 1;
+    top: 0;
 }
 .header-logo-links {
     text-decoration: none;
@@ -32,7 +33,7 @@ header {
     width: 100%;
 }
 .section-header {
-    padding: 0 40px;
+    padding: 30px 40px;
 }
 .logo-title {
     margin: 0;
@@ -107,7 +108,7 @@ main {
 .start-screen-content {
     width: 100%;
     max-width: 460px;
-    padding-top: 14%;
+    padding-top: 13.7%;
 }
 h2 {
     margin: 0;
@@ -138,7 +139,7 @@ p {
 }
 .start-screen-content p {
     margin: 0;
-    padding: px 0;
+    padding: 42px 0;
 }
 .start-screen-img img {
     display: block;
@@ -364,4 +365,24 @@ footer {
     display: flex;
     align-items: center; 
     text-decoration: none;
+}
+.section-header-pets {
+    height: 100%;
+    background-color: #fff;
+}
+.section-header-pets .logo-title,
+.section-header-pets .logo-subtitle,
+.section-header-pets .nav-link {
+    color: #545454;
+}
+.section-header-pets .nav-link-active {
+    color: #292929;
+}
+.section-pets-page {
+    padding: 200px 0 98px 0;
+}
+.section-pets-page .slider-pets {
+    max-width: 1280px;
+    flex-wrap: wrap;
+    padding: 0;
 }
