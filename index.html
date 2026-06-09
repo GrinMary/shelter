@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Shelter</title>
+    <link rel="icon" href="./assets/png/favicon.png" type="image/png">
 </head>
 <body>
     <header>
@@ -18,9 +19,9 @@
             <nav>
                 <ul class="nav-list">
                     <li class="nav-item"><a href="" class="nav-link nav-link-active">About the shelter</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Our pets</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Help the shelter</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="pets.html" class="nav-link">Our pets</a></li>
+                    <li class="nav-item"><a href="#section-help" class="nav-link">Help the shelter</a></li>
+                    <li class="nav-item"><a href="#footer-content" class="nav-link">Contacts</a></li>
                 </ul>
                 <div class="burger-menu">
                 </div>
@@ -33,7 +34,7 @@
                 <h2>Not only people<br>need a house</h2>
                 <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. 
                 He or she will love you more than anybody else in the world, you will see!</p>
-                <button class="button-primary">Make a friend</button>
+                <a href="#section-pets" class="button-primary">Make a friend</a>
             </div>
             <div class="start-screen-img">
                 <img src="./assets/png/start-screen-puppy.png" alt="start-screen-puppy">
@@ -53,7 +54,7 @@
                 hardly ever leave them alone.</p>
             </div>
         </div>
-        <div class="section section-pets">
+        <div class="section section-pets" id="section-pets">
             <h3>Our friends who<br>are looking for a house</h3>
             <div class="slider slider-pets">
                 <div class="slider-item">
@@ -82,9 +83,9 @@
                 <button class="slider-button slider-button-prev">&larr;</button>
                 <button class="slider-button slider-button-next">&rarr;</button>
             </div>
-            <button class="button-primary">Get to know the rest</button>
+            <a href="pets.html" class="button-primary">Get to know the rest</a>
         </div>
-        <div class="section section-help">
+        <div class="section section-help" id="section-help">
             <h3>How you can help<br>our shelter</h3>
             <ul class="help-list">
                 <li class="help-list-item">
@@ -133,10 +134,10 @@
                 <div class="donation-content-info">
                     <h3>You can also<br>make a donation</h3>
                     <span>Name of the bank / Type of bank account</span>
-                    <div class="credit-card">
+                    <a href="" class="credit-card">
                         <img src="./assets/svg/credit-card.svg" alt="credit-card">
                         <span class="credit-card-info">8380 2880 8028 8791 7435</span>
-                    </div>
+                    </a>
                     <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Maecenas a ipsum at libero sagittis dignissim sed ac diam. 
                         Praesent ultrices maximus tortor et vulputate. 
@@ -147,17 +148,17 @@
         </div>
     </main>
     <footer>
-        <div class="footer-content">
+        <div class="footer-content" id="footer-content">
            <div class="footer-contacts">
                <h3>For questions<br>and suggestions</h3> 
                 <div class="mail">
-                    <a href="" class="footer-link email-link">
+                    <a href="mailto:email@shelter.com" class="footer-link email-link">
                         <img src="./assets/svg/icon-email.svg" alt="email">
                         <span>email@shelter.com</span>
                     </a>   
                 </div>
                 <div class="phone">
-                    <a href="" class="footer-link phone-link">
+                    <a href="tel:+136745677554" class="footer-link phone-link">
                         <img src="./assets/svg/icon-phone.svg" alt="phone">
                         <span>+13 674 567 75 54</span>
                     </a>   
@@ -166,15 +167,15 @@
            <div class="footer-location">
                 <h3>We are waiting<br> for your visit</h3>
                 <div class="location">
-                    <a href="" class="footer-link boston">
+                    <a href="https://maps.app.goo.gl/DNJ1rmuDCyb3fDHu6" class="footer-link boston" target="_blank">
                         <img src="./assets/svg/icon-marker.svg" alt="location">
                         <span>1 Central Street, Boston<br>(entrance from the store)</span>
                     </a>   
                 </div>
                 <div class="location">
-                    <a href="" class="footer-link london">
+                    <a href="https://maps.app.goo.gl/PRw58GWCZRp9RzQy9" class="footer-link london" target="_blank">
                         <img src="./assets/svg/icon-marker.svg" alt="location">
-                        <span>18 South Park, London </span>
+                        <span>18 South Park, London</span>
                     </a>   
                 </div>
            </div>

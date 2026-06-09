@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/png/favicon.png" type="image/png">
 </head>
 <body>
     <header>
         <div class="section section-header section-header-pets">
             <div class="header-logo">
-                <a href="" class="header-logo-links">
+                <a href="index.html" class="header-logo-links">
                     <h1 class="logo-title">Cozy House</h1>
                     <span class="logo-subtitle">Shelter for pets in Boston</span>
                 </a>
             </div>
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="" class="nav-link">About the shelter</a></li>
-                    <li class="nav-item"><a href="" class="nav-link nav-link-active">Our pets</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Help the shelter</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">About the shelter</a></li>
+                    <li class="nav-item"><a href="pets.html" class="nav-link nav-link-active">Our pets</a></li>
+                    <li class="nav-item"><a href="index.html#section-help" class="nav-link">Help the shelter</a></li>
+                    <li class="nav-item"><a href="#footer-content" class="nav-link">Contacts</a></li>
                 </ul>
                 <div class="burger-menu"></div>
             </nav>
@@ -28,6 +29,7 @@
     </header>
     <main>
         <div class="section section-pets section-pets-page">
+            <h2 class="visually-hidden">Скрытый подзаголовок</h2>
             <h3>Our friends who<br>are looking for a house</h3>
             <div class="slider slider-pets">
                 <div class="slider-item">
@@ -87,11 +89,51 @@
                     <button class="button-secondary">Learn more</button>
                 </div>
             </div>
-            <!--<div class="slider-buttons">
-                <button class="slider-button slider-button-prev">&larr;</button>
-                <button class="slider-button slider-button-next">&rarr;</button>
-            </div>-->
+            <div class="slider-buttons">
+                <a href="" class="slider-button slider-button-prev-skip slider-button-inactive">&lt;&lt;</a>
+                <a href="" class="slider-button slider-button-prev slider-button-inactive">&lt;</a>
+                <a href="" class="slider-button slider-button-page slider-button-active">1</a>
+                <a href="" class="slider-button slider-button-next">></a>
+                <a href="" class="slider-button slider-button-next-skip">>></a>
+            </div>
         </div>
     </main>
+    <footer>
+        <div class="footer-content" id="footer-content">
+           <div class="footer-contacts">
+               <h3>For questions<br>and suggestions</h3> 
+                <div class="mail">
+                    <a href="mailto:email@shelter.com" class="footer-link email-link">
+                        <img src="./assets/svg/icon-email.svg" alt="email">
+                        <span>email@shelter.com</span>
+                    </a>   
+                </div>
+                <div class="phone">
+                    <a href="tel:+136745677554" class="footer-link phone-link">
+                        <img src="./assets/svg/icon-phone.svg" alt="phone">
+                        <span>+13 674 567 75 54</span>
+                    </a>   
+                </div>
+           </div>
+           <div class="footer-location">
+                <h3>We are waiting<br> for your visit</h3>
+                <div class="location">
+                    <a href="https://maps.app.goo.gl/DNJ1rmuDCyb3fDHu6" class="footer-link boston" target="_blank">
+                        <img src="./assets/svg/icon-marker.svg" alt="location">
+                        <span>1 Central Street, Boston<br>(entrance from the store)</span>
+                    </a>   
+                </div>
+                <div class="location">
+                    <a href="https://maps.app.goo.gl/PRw58GWCZRp9RzQy9" class="footer-link london" target="_blank">
+                        <img src="./assets/svg/icon-marker.svg" alt="location">
+                        <span>18 South Park, London</span>
+                    </a>   
+                </div>
+           </div>
+           <div class="footer-img">
+                <img src="./assets/png/footer-puppy.png" alt="puppy" >
+           </div>   
+        </div>
+    </footer>
 </body>
 </html>
