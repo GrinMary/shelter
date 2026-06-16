@@ -27,23 +27,38 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.start-screen {
+    width: 100%;
+    min-width: 1280px;
+    background:
+        url('./assets/jpg/start-screen-gradient-background.jpg'),
+        url('./assets/jpg/start-screen-background.jpg'),
+        linear-gradient(0deg, #211F20, #211F20),
+        radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover, cover;
+    background-position: center, center, center, center;
+}
 header {
-    position:absolute;
     /*max-width: 1280px;
     width: 100%;*/
     width: 1280px;
     height: 120px;
-    z-index: 1;
-    top: 0;
 }
 .header-logo-links {
     text-decoration: none;
+}
+section {
+    width: 100%;
+    min-width: 1280px;
+    background-color: #F6F6F6;
 }
 .section {
     display: flex;
     width: 1280px;
     justify-content:space-between;
     align-items: center;
+    margin: 0 auto;
     /*width: 100%;*/
 }
 .section-header {
@@ -71,6 +86,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     margin: 0;
+    padding: 0;
 }
 .nav-item {
     list-style: none;
@@ -99,27 +115,12 @@ header {
     position: relative;
     display: none;
 }
-main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 .section-start-screen {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1280px;
-    padding: 180px 40px 0 40px;
-    background:
-        url('./assets/jpg/start-screen-gradient-background.jpg'),
-        url('./assets/jpg/start-screen-background.jpg'),
-        linear-gradient(0deg, #211F20, #211F20),
-        radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: cover, cover, cover, cover;
-    background-position: center, center, center, center;
+    padding: 60px 40px 0 40px;
 }
 .start-screen-content {
     width: 100%;
@@ -162,6 +163,13 @@ p {
 .start-screen-img img {
     display: block;
 }
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .section-about {
     max-width: 975px;
     display: flex;
@@ -199,7 +207,6 @@ h3 {
     max-width: 1280px;
     text-align: center;
     color: #545454;
-    background-color: #F6F6F6;
     padding: 78px 0 98px 0;
 }
 .slider-pets {
@@ -207,7 +214,7 @@ h3 {
     justify-content: space-around;
     max-width: 1080px;
     width: 100%;
-    padding: 60px 0 92px 0;
+    padding: 60px 0;
 }
 .slider-item {
     display: flex;
@@ -301,7 +308,6 @@ h3 {
 .section-donation {
     max-width: 1280px;
     /*width: 100%;*/
-    background-color: #F6F6F6 ;
 }
 .donation-content {
     max-width: 915px;
@@ -352,14 +358,23 @@ h3 {
 footer {
     /*max-width: 1280px;
     width: 100%;*/
-    width: 1280px;
+    width: 100%;
+    min-width: 1280px;
     min-height: 350px;
+    background: url(./assets/png/footer-gradient-background.png),
+                url(./assets/png/footer-background.png),
+                linear-gradient(0deg, #211F20, #211F20),
+                radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover, cover;
+    background-position: center, center, center, center;
 }
 .footer-content {
     display: flex;
+    width: 1280px;
     justify-content: space-between;
     padding: 40px 45px 0 40px;
-    background: url(./assets/png/footer-background.png) no-repeat center;
+    margin: 0 auto;
 }
 .footer-content h3 {
     color: #fff;
@@ -401,12 +416,12 @@ footer {
     color: #292929;
 }
 .section-pets-page {
-    padding: 200px 0 98px 0;
+    padding: 80px 0 98px 0;
 }
 .section-pets-page .slider-pets {
     max-width: 1280px;
     flex-wrap: wrap;
-    padding: 60px 0;
+    padding: 60px 18px 30px 18px;
 }
 .section-pets-page .slider-item {
     margin-bottom: 30px;
