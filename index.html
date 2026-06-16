@@ -8,27 +8,27 @@
     <link rel="icon" href="./assets/png/favicon.png" type="image/png">
 </head>
 <body>
-    <header>
-        <div class="section section-header">
-            <div class="header-logo">
-                <a href="" class="header-logo-links">
-                    <h1 class="logo-title">Cozy House</h1>
-                    <span class="logo-subtitle">Shelter for pets in Boston</span>
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="" class="nav-link nav-link-active">About the shelter</a></li>
-                    <li class="nav-item"><a href="pets.html" class="nav-link">Our pets</a></li>
-                    <li class="nav-item"><a href="#section-help" class="nav-link">Help the shelter</a></li>
-                    <li class="nav-item"><a href="#footer-content" class="nav-link">Contacts</a></li>
-                </ul>
-                <div class="burger-menu">
+    <div class="start-screen">
+        <header>
+            <div class="section section-header">
+                <div class="header-logo">
+                    <a href="" class="header-logo-links">
+                        <h1 class="logo-title">Cozy House</h1>
+                        <span class="logo-subtitle">Shelter for pets in Boston</span>
+                    </a>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <main>
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="" class="nav-link nav-link-active">About the shelter</a></li>
+                        <li class="nav-item"><a href="pets.html" class="nav-link">Our pets</a></li>
+                        <li class="nav-item"><a href="#section-help" class="nav-link">Help the shelter</a></li>
+                        <li class="nav-item"><a href="#footer-content" class="nav-link">Contacts</a></li>
+                    </ul>
+                    <div class="burger-menu">
+                    </div>
+                </nav>
+            </div>
+        </header>
         <div class="section section-start-screen">
             <div class="start-screen-content">
                 <h2>Not only people<br>need a house</h2>
@@ -40,6 +40,8 @@
                 <img src="./assets/png/start-screen-puppy.png" alt="start-screen-puppy">
             </div>
         </div>
+    </div>
+    <main>
         <div class="section section-about">
             <div class="section-about-img">
                 <img src="./assets/png/about-pets.png" alt="about-pets">
@@ -54,37 +56,39 @@
                 hardly ever leave them alone.</p>
             </div>
         </div>
-        <div class="section section-pets" id="section-pets">
-            <h3>Our friends who<br>are looking for a house</h3>
-            <div class="slider slider-pets">
-                <div class="slider-item">
-                    <div class="slider-img">
-                        <img src="./assets/png/pets-katrine.png" alt="katrine">
+        <section>
+            <div class="section section-pets" id="section-pets">
+                <h3>Our friends who<br>are looking for a house</h3>
+                <div class="slider slider-pets">
+                    <div class="slider-item">
+                        <div class="slider-img">
+                            <img src="./assets/png/pets-katrine.png" alt="katrine">
+                        </div>
+                        <span class="pets-name">Katrine</span>
+                        <button class="button-secondary">Learn more</button>
                     </div>
-                    <span class="pets-name">Katrine</span>
-                    <button class="button-secondary">Learn more</button>
-                </div>
-                <div class="slider-item">
-                    <div class="slider-img">
-                        <img src="./assets/png/pets-jennifer.png" alt="jennifer">
+                    <div class="slider-item">
+                        <div class="slider-img">
+                            <img src="./assets/png/pets-jennifer.png" alt="jennifer">
+                        </div>
+                        <span class="pets-name">Jennifer</span>
+                        <button class="button-secondary">Learn more</button>
                     </div>
-                    <span class="pets-name">Jennifer</span>
-                    <button class="button-secondary">Learn more</button>
-                </div>
-                <div class="slider-item">
-                    <div class="slider-img">
-                        <img src="./assets/png/pets-woody.png" alt="woody">
+                    <div class="slider-item">
+                        <div class="slider-img">
+                            <img src="./assets/png/pets-woody.png" alt="woody">
+                        </div>
+                        <span class="pets-name">Woody</span>
+                        <button class="button-secondary">Learn more</button>
                     </div>
-                    <span class="pets-name">Woody</span>
-                    <button class="button-secondary">Learn more</button>
                 </div>
+                <div class="slider-buttons">
+                    <button class="slider-button slider-button-prev">&larr;</button>
+                    <button class="slider-button slider-button-next">&rarr;</button>
+                </div>
+                <a href="pets.html" class="button-primary">Get to know the rest</a>
             </div>
-            <div class="slider-buttons">
-                <button class="slider-button slider-button-prev">&larr;</button>
-                <button class="slider-button slider-button-next">&rarr;</button>
-            </div>
-            <a href="pets.html" class="button-primary">Get to know the rest</a>
-        </div>
+        </section>
         <div class="section section-help" id="section-help">
             <h3>How you can help<br>our shelter</h3>
             <ul class="help-list">
@@ -126,26 +130,28 @@
                 </li>
             </ul>
         </div>
-        <div class="section section-donation">
-            <div class="donation-content">
-                <div class="donation-content-img">
-                    <img src="./assets/png/donation-dog.png" alt="donation-dog">
-                </div>
-                <div class="donation-content-info">
-                    <h3>You can also<br>make a donation</h3>
-                    <span>Name of the bank / Type of bank account</span>
-                    <a href="" class="credit-card">
-                        <img src="./assets/svg/credit-card.svg" alt="credit-card">
-                        <span class="credit-card-info">8380 2880 8028 8791 7435</span>
-                    </a>
-                    <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Maecenas a ipsum at libero sagittis dignissim sed ac diam. 
-                        Praesent ultrices maximus tortor et vulputate. 
-                        Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    </p>
+        <section>
+            <div class="section section-donation">
+                <div class="donation-content">
+                    <div class="donation-content-img">
+                        <img src="./assets/png/donation-dog.png" alt="donation-dog">
+                    </div>
+                    <div class="donation-content-info">
+                        <h3>You can also<br>make a donation</h3>
+                        <span>Name of the bank / Type of bank account</span>
+                        <a href="" class="credit-card">
+                            <img src="./assets/svg/credit-card.svg" alt="credit-card">
+                            <span class="credit-card-info">8380 2880 8028 8791 7435</span>
+                        </a>
+                        <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Maecenas a ipsum at libero sagittis dignissim sed ac diam. 
+                            Praesent ultrices maximus tortor et vulputate. 
+                            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer-content" id="footer-content">
