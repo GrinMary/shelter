@@ -27,16 +27,29 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.start-screen {
+    width: 100%;
+    background:
+        url('./assets/jpg/start-screen-gradient-background.jpg'),
+        url('./assets/jpg/start-screen-background.jpg'),
+        linear-gradient(0deg, #211F20, #211F20),
+        radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover, cover;
+    background-position: center, center, center, center;
+}
 header {
-    position:absolute;
     max-width: 1280px;
     width: 100%;
     height: 120px;
-    z-index: 1;
-    top: 0;
+    margin: 0 auto;
 }
 .header-logo-links {
     text-decoration: none;
+}
+section {
+    width: 100%;
+    background-color: #F6F6F6;
 }
 .section {
     display: flex;
@@ -98,27 +111,12 @@ header {
     position: relative;
     display: none;
 }
-main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 .section-start-screen {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1280px;
-    padding: 180px 40px 0 40px;
-    background:
-        url('./assets/jpg/start-screen-gradient-background.jpg'),
-        url('./assets/jpg/start-screen-background.jpg'),
-        linear-gradient(0deg, #211F20, #211F20),
-        radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: cover, cover, cover, cover;
-    background-position: center, center, center, center;
+    padding: 60px 40px 0 40px;
 }
 .start-screen-content {
     width: 100%;
@@ -163,6 +161,13 @@ p {
     display: block;
     max-width: 100%;
 }
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .section-about {
     max-width: 975px;
     display: flex;
@@ -200,16 +205,16 @@ h3 {
     max-width: 1280px;
     text-align: center;
     color: #545454;
-    background-color: #F6F6F6;
     padding: 78px 0 98px 0;
+    margin: 0 auto;
 }
 .slider-pets {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1080px;
+    max-width: 1280px;
     width: 100%;
-    padding: 60px 0;
+    padding: 60px 100px;
 }
 .slider-item {
     display: flex;
@@ -351,15 +356,23 @@ h3 {
     margin: 20px 0;
 }
 footer {
-    max-width: 1280px;
     width: 100%;
     min-height: 350px;
+    background: url(./assets/png/footer-gradient-background.png),
+                url(./assets/png/footer-background.png),
+                linear-gradient(0deg, #211F20, #211F20),
+                radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover, cover;
+    background-position: center, center, center, center;
 }
 .footer-content {
     display: flex;
+    max-width: 1280px;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 40px 45px 0 40px;
-    background: url(./assets/png/footer-background.png) no-repeat center;
+    margin: 0 auto;
 }
 .footer-content h3 {
     color: #fff;
@@ -401,7 +414,7 @@ footer {
     color: #292929;
 }
 .section-pets-page {
-    padding: 200px 0 98px 0;
+    padding: 80px 0 98px 0;
 }
 .section-pets-page .slider-pets {
     max-width: 1280px;
@@ -437,6 +450,21 @@ footer {
     pointer-events: none;
 }
 
+@media (max-width: 1100px) {
+    .help-list {
+        justify-content: center;
+    }
+    .help-list-item {
+        padding: 0 30px 54px 30px;
+    }
+    .help-list-item:nth-child(5) {
+        padding-right: 30px;
+    }
+    .help-list-item:nth-child(6) {
+        padding-left: 30px;
+    }
+}
+
 @media (max-width: 1024px) {
     .section-start-screen {
         flex-direction: column;
@@ -448,5 +476,15 @@ footer {
     }
     .start-screen-content {
         padding-top: 60px;
+    }
+}
+
+@media (max-width: 960px) {
+    .help-list-item {
+        padding: 0 20px 54px 20px;
+    }
+    .donation-content { 
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }
