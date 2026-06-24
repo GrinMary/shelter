@@ -139,6 +139,7 @@ section {
     align-items: flex-start;
     max-width: 1280px;
     padding: 60px 40px 0 40px;
+    margin: 0 auto;
 }
 .start-screen-content {
     width: 100%;
@@ -577,6 +578,10 @@ footer {
         width: 30%;
         padding: 0 0 54px 0;
     }
+    .help-list-item:nth-child(5),
+    .help-list-item:nth-child(6) {
+        padding: 0 0 54px 0;
+    }
     .section-pets-page .slider-pets {
         padding: 30px 70px 8px 70px;
     }
@@ -586,6 +591,9 @@ footer {
     }
     .section-pets-page {
         padding: 80px 0 75px 0;
+    }
+    h2 {
+        letter-spacing: 0;
     }
 }
 
